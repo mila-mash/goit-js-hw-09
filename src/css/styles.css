@@ -16,3 +16,99 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/* my styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #82a19f;
+}
+
+li::marker {
+  content: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  font-family: inherit;
+}
+
+.gallery {
+  padding: 156px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-image {
+  max-width: 360px;
+}
+
+/* form */
+
+.feedback-form {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-input,
+.form-t-area {
+  min-height: 40px;
+  min-width: 360px;
+}
+
+.form-input::placeholder,
+.form-t-area::placeholder {
+  opacity: 0;
+  transition: opacity 150ms;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.form-input:focus::placeholder,
+.form-t-area:focus::placeholder {
+  opacity: 1;
+  color: #2e2f42;
+}
+
+.sbm-btn {
+  margin-top: 8px;
+  border: none;
+  box-shadow: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 86px;
+  min-height: 40px;
+
+  background-color: #4e75ff;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
