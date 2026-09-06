@@ -18,7 +18,9 @@ function dataFiller() {
   const dataContent = JSON.parse(localStorage.getItem('feedback-form-state'));
 
   if (dataContent) {
+    formData.email = dataContent.email.trim();
     emailText.value = dataContent.email;
+    formData.message = dataContent.message.trim();
     messageText.value = dataContent.message;
   }
 }
@@ -34,5 +36,7 @@ function sbmHandler(event) {
     console.log(formData);
     event.target.reset();
     localStorage.removeItem('feedback-form-state');
+    formData.email = '';
+    formData.message = '';
   }
 }
