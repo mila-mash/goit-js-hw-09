@@ -64,7 +64,7 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
+const gallery = document.querySelector('.gall');
 
 function createMarkup(imagesArr) {
   return imagesArr
@@ -87,7 +87,7 @@ gallery.insertAdjacentHTML('afterbegin', createMarkup(images));
 
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-let galleryModal = new SimpleLightbox('.gallery a', {
+let galleryModal = new SimpleLightbox('.gall a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
